@@ -1,0 +1,610 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 999;
+    background-color: white;
+    
+}
+.arrow_back, .home{
+    width: 7.5%;
+    
+
+}
+.inside_arrow_back, .inside_home{
+    width: 30%;
+    margin: 10%;
+}
+.inside_home{
+    margin-left: -40%;
+}
+.inside_arrow_back{
+    margin-left: 15%;
+}
+
+.inside_arrow_back:hover{
+    transform: scale(1.1);
+}
+.inside_home:hover{
+    transform: scale(1.1);
+}
+.tittle{
+    width: 70%;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.search{
+    width: 15%;
+height: 80px;
+}
+#searchbar{
+    text-indent: 47px;
+    height: 40px;
+    width: 75%;
+    border: 2px solid black;
+    margin-left: 15%;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+    font-weight: bold;
+    
+}
+::placeholder{
+    color: gray;
+}
+.m_g{
+    position: absolute;
+
+    top: 25px;
+    left: 87.7%;
+}
+#m_g_inside{
+    width: 30px;
+    height: 30px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#list{
+    top: 100%;
+   position: absolute;
+   left: 83%;
+   
+   border-radius: 15px;
+}
+.animals{
+    padding: 10px;
+    width: 300px;
+    display: none;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+   font-family:'Times New Roman', Times, serif;
+   background-color: white;
+   
+    
+   
+    
+    }
+    .animals:hover{
+        transform: scale(1.05);
+    }
+#logo_in_menu, #special, #special_2, #special_3{
+    width:25px;
+    height: 25px;
+    margin-left: -25%;
+    margin-right: 15px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    
+    
+    
+}
+#special, #special_3{
+    margin-left: -10px;
+   
+}
+#special_2{
+    margin-left: -5px;
+    margin-right: 5px;
+}
+#special_3{
+    width: 30px;
+}
+
+.tittles_informations, .tittles_informations_second, .tittles_informations_first{
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: monospace;
+    margin-top: 10px;
+    font-size: 40px;
+    
+   
+    
+}
+.tittles_informations_first{
+    margin-bottom: 500px;
+}
+.tittles_informations_second{
+    margin-bottom: 50px;
+    
+}
+#map_of_teams{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+.first_text_container{
+    width: 100%;
+    font-size: 15.2px;
+    
+    padding-left: 20px
+}
+#container_1{
+    display: flex;
+    
+}
+.container_left, .container_right{
+    width: 50%;
+    margin: 10px;
+}
+#container{
+    
+    
+    width: 70%;
+  margin-left: 15%;
+}
+
+.line_of_team {
+    height: 280px;
+    width: 25%;
+    opacity: 0.08;
+    
+    margin-bottom: 150px;
+  }
+  .line_of_team:hover{
+    border-bottom: 2px solid black;
+opacity: 1;
+
+  }
+    
+  
+  
+  .tittle_of_team {
+    
+    
+    
+    
+    
+    color: black;
+    font-weight: bold;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+    
+    font-size: 30px;
+    text-align: center;
+   
+    
+  }
+  #logo_of_team_special{
+    margin-left: 70px;
+  }
+  #logo_of_team_special_2{
+   margin-left: 45px;
+  }
+  .logo_of_team{
+    width: 80%;
+    margin-left: 10%;
+    
+    padding-bottom: 15px;
+   height: 80%;
+    
+  }
+  
+   #logo_of_all_teams{
+    display: flex;
+    width: 100%;
+   }
+    
+    
+   footer{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   }
+   #left_footer, #right_footer{
+    width: 20%;
+   }
+   #middle_footer{
+    width: 60%;
+   color: white;
+    text-align: center;
+    margin-top: 1.5%;
+    font-size: 25px;
+   }
+.creator{
+    color: white;
+    
+}
+   
+.creator:hover{
+   border-bottom: 2px solid white;
+    margin-bottom: 2px;
+
+}
+#right_footer{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top:1.5% ;
+}
+.contact{
+    color: white;
+    user-select: none;
+}
+.contact:hover{
+    border-bottom: 2px solid white;
+    margin-bottom: 2px; 
+}
+.logo_footer{
+    width: 60px;
+    height: 60px;
+   
+}
+#left_footer{
+    text-align: center;
+    margin-top: 1%;
+}
+   .logo_footer:hover{
+    transform: scale(1.2);
+   }
+#full_body{
+width: 100%;
+position: absolute;
+top: 100px;
+
+}
+.best_players_ever{
+    position: absolute;
+    top: 60px;
+    left: 39%;
+    
+}
+.player{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: none;
+    object-fit: cover;
+}
+.number_of_player_index{
+    position: absolute;
+    top: 420px;
+    font-weight: bold;
+    font-size: 30px;
+    left: 88%;
+    display: none;
+}
+.team_of_player_index{
+    position: absolute;
+    top: 420px;
+}
+.logo_of_player_team_index{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.name_of_player_index{
+    position: absolute;
+    top: 420px;
+    left: 17.5%;
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+}
+@media only screen and (min-width: 1921px){
+    #list{
+        left: 87%;
+    }
+    .first_text_container{
+        font-size: 20px;
+    }
+    .line_of_team{
+        height: 350px;
+    }
+    footer{
+        height: 100px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+       
+        
+        
+       }
+       .player{
+        width: 500px;
+        height: 500px;
+        
+       }
+       .best_players_ever{
+        left: 40%;
+       }
+       .tittles_informations{
+        margin-top: 650px;
+       }
+       .number_of_player_index{
+        font-size: 35px;
+        top: 520px;
+        left: 95%;
+       }
+       .logo_of_player_team_index{
+        width: 50px;
+        height: 50px;
+        
+       }
+       .name_of_player_index{
+        font-size: 35px;
+        top: 520px;
+        left: 27%;
+       }
+       .team_of_player_index{
+        top: 520px;
+       }
+    
+    
+}
+@media only screen and (max-width: 400px){
+    header{
+        height: 110px;
+        
+    }
+    .tittle{
+        font-size: 22px;
+    }
+    .inside_arrow_back{
+        width: 20px;
+        height: 20px;
+    }
+    .search{
+        position: absolute;
+        width: 90%;
+        left: -5%;
+        top: 45px;
+    }
+    #searchbar{
+        width: 90%;
+        height: 30px;
+    
+    }
+    .inside_home{
+        width: 20px;
+        height: 20px;
+        margin-left: 1100%;
+        
+    }
+    .inside_home:hover{
+        transform: scale(1.0);
+    }
+    .inside_arrow_back:hover{
+        transform: scale(1.0);
+    }
+    #m_g_inside{
+        width: 20px;
+        height: 20px;
+        
+    }
+    .m_g{
+        left: 20%;
+    }
+    #list{
+        width: 90%;
+    left: 5%;
+    }
+    .animals{
+        width: 100%;
+        font-size: 16px;
+    }
+    .animals:hover{
+        transform: scale(1.0);
+    }
+    #special, #special_2{
+        width: 16px;
+        height: 16px;
+    }
+    #special_2{
+        margin-left: -10px;
+    }
+    
+    #container_1{
+        width: 90%;
+      margin: auto;
+        display: block;
+        
+    }
+    .container_left, .container_right{
+        width: 100%;
+        margin: 0px;
+       
+        
+        
+        
+    }
+    #map_of_teams{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .first_text_container{
+        font-size: 11.5px;
+        padding-left: 0px;
+        text-align:start; 
+        
+       
+    }
+    h1{
+        font-size: 20px;
+    }
+    
+    .container_right{
+        
+    margin: 0px;
+        width: 100%;
+        
+    }
+    .tittles_informations_second, .tittles_informations, .tittles_informations_first{
+        font-size: 19.7px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+    
+    #logo_of_all_teams{
+        width: 100%;
+        display: block;
+    }
+    .line_of_team{
+        width: 100%;
+        margin-bottom: 70px;
+        opacity: 1;
+        height: auto;
+        
+    }
+    .line_of_team:hover{
+        border-bottom: 0px solid black;
+    }
+    footer{
+        top: 8300px;
+        width: 100%;
+        display: block;
+        height: 200px;
+    }
+    #left_footer{
+        width: 100%;
+        
+    }
+    .logo_of_team{
+        width: 50%;
+        height: 30%;
+       margin-top: 20px;
+       margin-left: 25%;
+    }
+    .logo_footer:hover{
+        transform: scale(1.0);
+    }
+    .tittle_of_team{
+        font-size: 20px;
+        margin-top: -10px;
+        border-bottom: 2px solid black;
+    }
+    #logo_of_team_special{
+       margin-left: 35%;
+    }
+    .logo_footer{
+        margin-top: 20px;
+        width: 50px;
+        height: 55px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid white;
+      
+    }
+    #middle_footer{
+        width: 100%;
+        margin-top: 25px;
+        font-size: 18px;
+        
+    }
+    span{
+        display: none;
+    }
+    .creator{
+        border-bottom: 2px solid white;
+        text-align: center;
+       
+    }
+    
+    #right_footer{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .contact{
+        font-size: 18px;
+        border-bottom: 2px solid white;
+        
+    }
+    #logo_of_team_special{
+        margin-left: 35%;
+    }
+    #logo_of_team_special_2{
+        margin-left: 30%;
+    }
+    .player{
+        width: 250px;
+        height: 250px;
+        
+    }
+    .best_players_ever{
+        left: 17.5%;
+    }
+    .number_of_player_index{
+        left: 75%;
+        top: 105%;
+}
+.team_of_player_index{
+    top: 105%;
+    left: 5%;
+}
+.name_of_player_index{
+    top: 120%;
+    left: 15%;
+    font-size: 20px;
+}
+.tittles_informations_first{
+    margin-bottom: 370px;
+}
+
+ }
+@media only screen and (max-width: 350px){
+    .tittle{
+        font-size: 21px;    
+    }
+    .best_players_ever{
+        left: 12.5%;
+    }
+    .player{
+        width: 200px;
+        height: 200px;
+    }
+    .best_players_ever{
+        top: 1%;
+    }
+    .name_of_player_index{
+        font-size: 20px;
+        top: 125%;
+        left: 15%;
+    }
+    .tittles_informations{
+      margin-top: -30px;
+    }
+}
+

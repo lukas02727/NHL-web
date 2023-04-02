@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"  href="./res/img/uvod/NHL_logo.png">
+    <link rel="stylesheet" href="./res/css/style.css">
+    <title>NHL</title>
+</head>
+<body>
+    <header>
+      <div class="arrow_back"><a href="index.html"><img class="inside_arrow_back" src="./res/img/uvod/arrow_back.jpg" alt=""></a></div>  
+        <div class="home"><a  href="index.html"><img class="inside_home" src="./res/img/uvod/home.jpg" alt=""></a></div>
+        <div class="tittle">NHL - PŘEHLED TÝMŮ</div>
+       <div class="search">
+        <div class="m_g"><img id="m_g_inside" src="./res/img/uvod/magnifying_glass.jpg" alt=""></div>
+        <input id="searchbar" onkeyup="search_team()" type="text" name="search" placeholder="Zadej název týmu">
+    </div> 
+    <div id='list'>
+        <a class="animals" href="Anaheim.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Anaheim/logo_1.jpg" alt="">Anaheim Ducks</a>
+        <a class="animals" href="Arizona.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/arizona/logo_1.jpg" alt="">Arizona Coyotes</a>
+        <a class="animals" href="Boston.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/boston/logo.jpg" alt="">Boston Bruins</a>
+        <a class="animals" href="Buffalo.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/buffalo/logo.jpg" alt="">Buffalo Sabres</a>
+        <a class="animals" href="Calgary.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/calgary/logo.jpg" alt="">Calgary Flames</a>
+        <a class="animals" href="Carolina.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/carolina/logo.jpg" alt="">Carolina Hurricanes</a>
+        <a class="animals" href="Colorado.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/colorado/logo.jpg" alt="">Colorado Avalanche</a>
+        <a class="animals" href="Columbus.html"><img id="special_2" id="logo_in_menu" src="./res/img/uvod/columbus/logo.jpg" alt="">Columbus Blue Jackets</a>
+        <a class="animals" href="Dallas.html"><img id="logo_in_menu" src="./res/img/uvod/dallas/logo.jpg" alt="">Dallas Stars</a>
+        <a class="animals" href="Detroit.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/detroit/logo.jpg" alt="">Detroit Red Wings</a>
+        <a class="animals" href="Edmonton.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/edmonton/logo.jpg" alt="">Edmonton Oliers</a>
+        <a class="animals" href="Florida.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/florida/logo.jpg" alt="">Florida Panthers</a>
+        <a class="animals" href="Chicago.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/chicago/logo.jpg" alt="">Chicago Blackhawks</a>
+        <a class="animals" href="Los_angeles.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Los_angeles/logo.jpg" alt="">Los Angeles Kings</a>
+        <a class="animals" href="Minnesota.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/minnesota/logo.jpg" alt="">Minnesota Wild</a>
+        <a class="animals" href="Montreal.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/montreal/logo.jpg" alt="">Montreal Canadiens</a>
+        <a class="animals" href="Nashville.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/nashville/logo.jpg" alt="">Nashville Predators</a>
+        <a class="animals" href="New_Yersey.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/New_Jersey/logo.jpg" alt="">New Yersey Devils</a>
+        <a class="animals" href="Islanders.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Islanders/logo.jpg" alt="">New York Islanders</a>
+        <a class="animals" href="Rangers.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Rangers/logo.jpg" alt="">New York Rangers</a>
+        <a class="animals" href="Ottawa.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/ottawa/logo.jpg" alt="">Ottawa Senators</a>
+        <a class="animals" href="Philadelphia.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/philadelphia/logo.jpg" alt="">Philadelpia Flyers</a>
+        <a class="animals" href="Pittsburgh.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/pittsburgh/logo.jpg" alt="">Pittsburgh Penguins</a>
+        <a class="animals" href="San_Jose.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/San_jose/logo.jpg" alt="">San Jose Sharks</a>
+        <a class="animals" href="Seattle.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Seattle/logo.jpg" alt="">Seattle Kraken</a>
+        <a class="animals" href="St_Louis.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/St_Louis/logo.jpg" alt="">St. Louis Blues</a>
+        <a class="animals" href="Tampa.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/tampa/logo.jpg" alt="">Tampa Bay Lighting</a>
+        <a class="animals" href="Toronto.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/toronto/logo.jpg" alt="">Toronto Maple Leafs</a>
+        <a class="animals" href="Vancouver.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Vancouver/logo.jpg" alt="">Vancouver Canucks</a>
+        <a class="animals" href="Vegas.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Vegas/logo.jpg" alt="">Vegas Golden Knights</a>
+        <a class="animals" href="Washington.html"><img id="special_3" id="logo_in_menu" src="./res/img/uvod/Washington/logo.jpg" alt="">Washington Capitals</a>
+        <a class="animals" href="Winnipeg.html"><img id="special" id="logo_in_menu" src="./res/img/uvod/Winnipeg/logo.jpg" alt="">Winnipeg Jets</a>
+    </div>
+    </header>
+    <div id="full_body">
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/pastrnak.jpg" alt="">
+        <div class="number_of_player_index">88</div>
+        <div class="name_of_player_index">David Pastrňák</div>
+        <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/boston/logo.jpg" alt=""></div>
+      </div>
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/Crosby.jpg" alt="">
+          <div class="number_of_player_index">87</div>
+          <div class="name_of_player_index">Sidney Crosby</div>
+          <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/pittsburgh/logo.jpg" alt=""></div></div>
+
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/gretzky.jpg" alt="">
+          <div class="number_of_player_index">99</div>
+          <div class="name_of_player_index">Wayne Gretzky</div>
+          <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/edmonton/logo.jpg" alt=""></div></div>
+
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/Kane.jpg" alt="">
+          <div class="number_of_player_index">88</div>
+          <div class="name_of_player_index">Patrick Kane</div>
+          <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/chicago/logo.jpg" alt=""></div></div>
+
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/Lemieux.jpg" alt="">
+          <div class="number_of_player_index">66</div>
+          <div class="name_of_player_index">Mario Lemieux</div>
+          <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/pittsburgh/logo.jpg" alt=""></div></div>
+
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/McDavid.jpg" alt="">
+          <div class="number_of_player_index">97</div>
+          <div class="name_of_player_index">Connor McDavid</div>
+          <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/edmonton/logo.jpg" alt=""></div></div>
+
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/Ovechkin.jpg" alt="">
+          <div class="number_of_player_index">8</div>
+          <div class="name_of_player_index">Alexander Ovechkin</div>
+          <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/Washington/logo.jpg" alt=""></div></div>
+
+         <div class="best_players_ever"><img class="player" src="./res/img/uvod/best_players_ever/jagr.jpg" alt="">
+          <div class="number_of_player_index">68</div>
+          <div class="name_of_player_index">Jaromír Jágr</div>
+          <div class="team_of_player_index"><img class="logo_of_player_team_index" src="./res/img/uvod/pittsburgh/logo.jpg" alt=""></div></div>
+        
+         
+    <div id="container">
+      <div class="tittles_informations_first">NEJLEPŠÍ HRÁČI NHL</div>
+         
+<div class="tittles_informations">INFORMACE O NHL</div>
+<div id="container_1">
+    <div class="container_left"><img id="map_of_teams" src="./res/img/uvod/map_of_teams/map.jpg" alt=""></div>
+    <div class="container_right">
+        <div class="first_text_container">
+            <div>
+               National Hockey League (NHL, francouzsky Ligue nationale de hockey - LNH, česky Národní hokejová liga) je profesionální soutěž v ledním hokeji, 
+            které se účastní kluby ze Spojených států amerických a Kanady. Je považována za nejprestižnější ligu světa.
+            
+        </div>
+        <div>
+            <br> Hraje ji 32 mužstev rozdělených do dvou konferencí, východní a západní. Každá z konferencí je rozdělena na dvě divize, celkem jsou divize čtyři. Ve východní konferenci je divize atlantická a metropolitní, v západní konferenci je divize pacifická a centrální. Každou divizi okupuje osm týmů.
+        </div>
+        <div>
+            <br>Sezóna je rozdělena na dvě části. První je tzv. základní část, v níž každé družstvo odehraje 82 utkání. Po skončení základní části nastává druhé kolo, tzv. play off. Do playoff postupuje osm nejlepších družstev z každé konference. Poté se hrají série na 4 vítězná utkání. Spolu s přerozdělením klubů do nových divizí se od sezony 2013-14 poprvé hrálo play off NHL podle nového formátu. Vyřazovací série se vrátily k rozdělení podle divizí, ovšem s přidáním systému divokých karet.
+        </div>
+        <div>
+            <br>Do play off postupují tři nejlepší celky z každé divize (celkem 12 týmů). Zbylá čtyři místa doplní držitelé tzv. divokých karet, jimiž jsou další dva nejlepší týmy z každé konference podle počtu bodů. Příslušnost k divizi v jejich případě nehraje roli. V rámci jedné konference tak mohou do play off postoupit jen tři týmy z jedné divize, zatímco z té druhé by jich v tom případě postoupilo pět.
+        </div>
+        <div>
+            <br>Nasazení držitelů divokých karet do play off bude záviset na zisku bodů v základní části. Vítěz divize s největším počtem bodů se střetne s držitelem divoké karty s menším počtem bodů. Vítěz divize s menším počtem bodů se střetne s tím držitelem divoké karty, který má více bodů. Mužstva na druhé a třetí příčce v divizi budou v prvním kole play off hrát proti sobě.
+        </div>
+        <div>
+            <br>Na rozdíl od minulých let je navíc pro druhé kolo formát daný a nemění se podle toho, zda do něj postoupí níže, nebo výše nasazený tým. Vítězové druhého kola, v němž byl brán zřetel na udržení divizního klíče, postoupí do finále konferencí. Jejich vítězové si pak tradičně zahrají finále Stanley Cupu. Vítěz získává trofej pro vítěze – Stanley Cup. Po sezóně probíhá draft nováčků a nejlepší hráči uplynulé sezóny mohou být odměněni některou z trofejí.
+        </div>
+        </div>
+    </div>
+    
+
+</div>
+<div class="tittles_informations_second">TÝMY</div>
+<div id="logo_of_all_teams">
+    <div class="line_of_team">
+        <a href="Anaheim.html"><img class="logo_of_team" src="./res/img/uvod/Anaheim/logo_1.jpg" /></a>
+        <div class="tittle_of_team">
+          <p>Anaheim Ducks</p>
+        </div>
+    </div>
+    <div class="line_of_team">
+        <a href="Arizona.html"><img class="logo_of_team" src="./res/img/uvod/arizona/logo_1.jpg" /></a>
+        <div class="tittle_of_team">
+          <p>Arizona Coyotes</p>
+        </div>
+    </div>
+    <div class="line_of_team">
+        <a href="Boston.html"><img class="logo_of_team" src="./res/img/uvod/boston/logo.jpg" /></a>
+        <div class="tittle_of_team">
+          <p>Boston Bruins</p>
+        </div>
+    </div>
+    <div class="line_of_team">
+        <a href="Buffalo.html"><img class="logo_of_team" src="./res/img/uvod/buffalo/logo.jpg" /></a>
+        <div class="tittle_of_team">
+          <p>Buffalo Sabres</p>
+        </div>
+    </div>
+     
+    </div>
+    <div id="logo_of_all_teams">
+        <div class="line_of_team">
+            <a href="Calgary.html"><img class="logo_of_team" src="./res/img/uvod/calgary/logo.jpg" /></a>
+            <div class="tittle_of_team">
+              <p>Calgary Flames</p>
+            </div>
+        </div>
+        <div class="line_of_team">
+            <a href="Carolina.html"><img class="logo_of_team" src="./res/img/uvod/carolina/logo.jpg" /></a>
+            <div class="tittle_of_team">
+              <p>Carolina Hurricanes</p>
+            </div>
+        </div>
+        <div class="line_of_team">
+            <a href="Colorado.html"><img class="logo_of_team" src="./res/img/uvod/colorado/logo.jpg" /></a>
+            <div class="tittle_of_team">
+              <p>Colorado Avalanche</p>
+            </div>
+        </div>
+        <div class="line_of_team">
+            <a href="Columbus.html"><img class="logo_of_team" src="./res/img/uvod/columbus/logo.jpg" /></a>
+            <div class="tittle_of_team">
+              <p>Columbus Blue Jackets</p>
+            </div>
+        </div>
+         
+        </div>
+        <div id="logo_of_all_teams">
+            <div class="line_of_team">
+                <a href="Dallas.html"><img id="logo_of_team_special" class="logo_of_team" src="./res/img/uvod/dallas/logo.jpg" /></a>
+                <div class="tittle_of_team">
+                  <p>Dallas Stars</p>
+                </div>
+            </div>
+            <div class="line_of_team">
+                <a href="Detroit.html"><img id="logo_of_team_special" class="logo_of_team" src="./res/img/uvod/detroit/logo.jpg" /></a>
+                <div class="tittle_of_team">
+                  <p>Detroit Red Wings</p>
+                </div>
+            </div>
+            <div class="line_of_team">
+                <a href="Edmonton.html"><img class="logo_of_team" src="./res/img/uvod/edmonton/logo.jpg" /></a>
+                <div class="tittle_of_team">
+                  <p>Edmonton Oliers</p>
+                </div>
+            </div>
+            <div class="line_of_team">
+                <a href="Florida.html"><img class="logo_of_team" src="./res/img/uvod/florida/logo.jpg" /></a>
+                <div class="tittle_of_team">
+                  <p>Florida Panthers</p>
+                </div>
+            </div>
+             
+            </div>
+            <div id="logo_of_all_teams">
+                <div class="line_of_team">
+                    <a href="Chicago.html"><img id="logo_of_team_special" class="logo_of_team" src="./res/img/uvod/chicago/logo.jpg" /></a>
+                    <div class="tittle_of_team">
+                      <p>Chicago Blackhawks</p>
+                    </div>
+                </div>
+                <div class="line_of_team">
+                    <a href="Los_angeles.html"><img id="logo_of_team_special_2" class="logo_of_team" src="./res/img/uvod/Los_angeles/logo.jpg" /></a>
+                    <div class="tittle_of_team">
+                      <p>Los Angeles Kings</p>
+                    </div>
+                </div>
+                <div class="line_of_team">
+                    <a href="Minnesota.html"><img class="logo_of_team" src="./res/img/uvod/minnesota/logo.jpg" /></a>
+                    <div class="tittle_of_team">
+                      <p>Minnesota Wild</p>
+                    </div>
+                </div>
+                <div class="line_of_team">
+                    <a href="Montreal.html"><img class="logo_of_team" src="./res/img/uvod/montreal/logo.jpg" /></a>
+                    <div class="tittle_of_team">
+                      <p>Montreal Canadiens</p>
+                    </div>
+                </div>
+                 
+                </div>
+                <div id="logo_of_all_teams">
+                    <div class="line_of_team">
+                        <a href="Nashville.html"><img class="logo_of_team" src="./res/img/uvod/nashville/logo.jpg" /></a>
+                        <div class="tittle_of_team">
+                          <p>Nashville Predators</p>
+                        </div>
+                    </div>
+                    <div class="line_of_team">
+                        <a href="New_Yersey.html"><img class="logo_of_team" src="./res/img/uvod/New_Jersey/logo.jpg" /></a>
+                        <div class="tittle_of_team">
+                          <p>New Yersey Devils</p>
+                        </div>
+                    </div>
+                    <div class="line_of_team">
+                        <a href="Islanders.html"><img class="logo_of_team" src="./res/img/uvod/Islanders/logo.jpg" /></a>
+                        <div class="tittle_of_team">
+                          <p>N.Y. Islanders</p>
+                        </div>
+                    </div>
+                    <div class="line_of_team">
+                        <a href="Rangers.html"><img class="logo_of_team" src="./res/img/uvod/Rangers/logo.jpg" /></a>
+                        <div class="tittle_of_team">
+                          <p>N.Y. Rangers</p>
+                        </div>
+                    </div>
+                     
+                    </div>
+                    <div id="logo_of_all_teams">
+                        <div class="line_of_team">
+                            <a href="Ottawa.html"><img class="logo_of_team" src="./res/img/uvod/ottawa/logo.jpg" /></a>
+                            <div class="tittle_of_team">
+                              <p>Ottawa Senators</p>
+                            </div>
+                        </div>
+                        <div class="line_of_team">
+                            <a href="Philadelphia.html"><img class="logo_of_team" src="./res/img/uvod/philadelphia/logo.jpg" /></a>
+                            <div class="tittle_of_team">
+                              <p>Philadelphia Flayers</p>
+                            </div>
+                        </div>
+                        <div class="line_of_team">
+                            <a href="Pittsburgh.html"><img class="logo_of_team" src="./res/img/uvod/pittsburgh/logo.jpg" /></a>
+                            <div class="tittle_of_team">
+                              <p>Pittsburgh Penguins</p>
+                            </div>
+                        </div>
+                        <div class="line_of_team">
+                            <a href="San_Jose.html"><img class="logo_of_team" src="./res/img/uvod/San_jose/logo.jpg" /></a>
+                            <div class="tittle_of_team">
+                              <p>San Jose Sharks</p>
+                            </div>
+                        </div>
+                         
+                        </div>
+                        <div id="logo_of_all_teams">
+                            <div class="line_of_team">
+                                <a href="Seattle.html"><img class="logo_of_team" src="./res/img/uvod/Seattle/logo.jpg" /></a>
+                                <div class="tittle_of_team">
+                                  <p>Seattle Krakens</p>
+                                </div>
+                            </div>
+                            <div class="line_of_team">
+                                <a href="St_Louis.html"><img id="logo_of_team_special" class="logo_of_team" src="./res/img/uvod/St_Louis/logo.jpg" /></a>
+                                <div class="tittle_of_team">
+                                  <p>St. Louis Blue</p>
+                                </div>
+                            </div>
+                            <div class="line_of_team">
+                                <a href="Tampa.html"><img class="logo_of_team" src="./res/img/uvod/tampa/logo.jpg" /></a>
+                                <div class="tittle_of_team">
+                                  <p>Tampa Bay Lighting</p>
+                                </div>
+                            </div>
+                            <div class="line_of_team">
+                                <a href="Toronto.html"><img class="logo_of_team" src="./res/img/uvod/toronto/logo.jpg" /></a>
+                                <div class="tittle_of_team">
+                                  <p>Toronto Maple Leafs</p>
+                                </div>
+                            </div>
+                             
+                            </div>
+                            <div id="logo_of_all_teams">
+                                <div class="line_of_team">
+                                    <a href="Vancouver.html"><img class="logo_of_team" src="./res/img/uvod/Vancouver/logo.jpg" /></a>
+                                    <div class="tittle_of_team">
+                                      <p>Vancouver Canucks</p>
+                                    </div>
+                                </div>
+                                <div class="line_of_team">
+                                    <a href="Vegas.html"><img  class="logo_of_team" src="./res/img/uvod/Vegas/logo.jpg" /></a>
+                                    <div class="tittle_of_team">
+                                      <p>Vegas Golden Knights </p>
+                                    </div>
+                                </div>
+                                <div class="line_of_team">
+                                    <a href="Washington.html"><img class="logo_of_team" src="./res/img/uvod/Washington/logo.jpg" /></a>
+                                    <div class="tittle_of_team">
+                                      <p>Washington Capitals</p>
+                                    </div>
+                                </div>
+                                <div class="line_of_team">
+                                    <a href="Winnipeg.html"><img class="logo_of_team" src="./res/img/uvod/Winnipeg/logo.jpg" /></a>
+                                    <div class="tittle_of_team">
+                                      <p>Winnipeg Jets</p>
+                                    </div>
+                                </div>
+                                 
+                                </div>
+
+                                  
+</div>
+<footer>
+  <div id="left_footer">
+     <a href="https://www.nhl.com/cs"><img class="logo_footer" src="./res/img/uvod/NHL_logo.png" alt=""></a> 
+  </div>
+  <div id="middle_footer">
+     <span>Vytvořil: </span> 
+      <a class="creator" href="https://github.com/lukas02727"> Lukáš Hodovník</a>
+  </div>
+  <div id="right_footer">
+      
+      <a class="contact" href="mailto:lukashodovnik@gmail.com">kontakt</a>
+  </div>
+</footer>         
+</div>
+
+<!--některé prvky designu jsou inspirovány od ttoomas-->
+    <script src="./res/js/main.js"></script>
+</body>
+
+
+
+</html>
